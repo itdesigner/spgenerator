@@ -1,0 +1,6 @@
+I:\spGenerator\genCore\bin\Release\genCore.dll
+I:\spGenerator\genCore\bin\Release\genCore.pdb
+I:\spGenerator\genCore\bin\Release\DS.Controls.dll
+I:\spGenerator\genCore\obj\Release\genCore.csprojResolveAssemblyReference.cache
+I:\spGenerator\genCore\obj\Release\genCore.dll
+I:\spGenerator\genCore\obj\Release\genCore.pdb
