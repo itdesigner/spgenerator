@@ -1,0 +1,28 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B8BF090A-A834-42C8-8E7E-6CED866E08D0/f:spGenMain.cs" caret="61711" scrollPosition="0|377" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager />
+</Configuration>

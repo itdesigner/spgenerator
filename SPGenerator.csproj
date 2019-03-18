@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8BF090A-A834-42C8-8E7E-6CED866E08D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DS.SPGenerator</RootNamespace>
+    <AssemblyName>DS.SSPCG</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DS.Controls, Version=1.0.2658.22019, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DS.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Skybound.VisualStyles, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f2d73a45b3e75a83">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Skybound.VisualStyles.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIControls, Version=1.0.4720.41661, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UIControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComplexGeneratorObjects.cs" />
+    <Compile Include="frmComplexGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComplexGenerator.Designer.cs">
+      <DependentUpon>frmComplexGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSPPerf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSPPerf.designer.cs">
+      <DependentUpon>frmSPPerf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSPTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSPTest.Designer.cs">
+      <DependentUpon>frmSPTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableSelector.designer.cs">
+      <DependentUpon>frmTableSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramChartHelper.cs" />
+    <Compile Include="spGenMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spGenMain.Designer.cs">
+      <DependentUpon>spGenMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestParameters.cs" />
+    <Compile Include="treeIMPL\ComplexSubtree.cs" />
+    <Compile Include="treeIMPL\ComplexTree.cs" />
+    <Compile Include="treeIMPL\ComplexTreeNode.cs" />
+    <Compile Include="treeIMPL\ComplexTreeNodeList.cs" />
+    <Compile Include="treeIMPL\Enums.cs" />
+    <Compile Include="treeIMPL\SimpleSubtree.cs" />
+    <Compile Include="treeIMPL\SimpleTree.cs" />
+    <Compile Include="treeIMPL\SimpleTreeNode.cs" />
+    <Compile Include="treeIMPL\SimpleTreeNodeList.cs" />
+    <EmbeddedResource Include="frmComplexGenerator.resx">
+      <DependentUpon>frmComplexGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSPPerf.resx">
+      <DependentUpon>frmSPPerf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSPTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSPTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableSelector.resx">
+      <DependentUpon>frmTableSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spGenMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>spGenMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\AliasField.datasource" />
+    <None Include="Properties\DataSources\FilterPair.datasource" />
+    <None Include="Properties\DataSources\SortOrder.datasource" />
+    <None Include="Properties\DataSources\SortPair.datasource" />
+    <None Include="Properties\DataSources\spGenerator.genCore.dbTableParameters.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\genCore\genCore.csproj">
+      <Project>{27363086-2E9C-4218-A789-32E962B1CE82}</Project>
+      <Name>genCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\resources\resources.csproj">
+      <Project>{2C539A7A-6D2B-4FD2-8D8A-812EBC14C6D5}</Project>
+      <Name>resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectionOptions.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataStore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nexxus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dakotaSoftware.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChooseColorHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data_Schema.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SQLDB.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SQLWizard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

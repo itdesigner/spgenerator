@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VSPerformanceSession Version="1.00">
+  <Options>
+    <Solution>H:\spGenerator\DS.SSPCG.sln</Solution>
+    <CollectionMethod>Instrumentation</CollectionMethod>
+    <AllocationMethod>None</AllocationMethod>
+    <LaunchRuntimeControl>true</LaunchRuntimeControl>
+    <AddReport>true</AddReport>
+    <ResourceBasedAnalysisSelected>false</ResourceBasedAnalysisSelected>
+    <ThreadBasedAnalysisSelected>false</ThreadBasedAnalysisSelected>
+    <UniqueReport>Timestamp</UniqueReport>
+    <SamplingMethod>Cycles</SamplingMethod>
+    <CycleCount>10000000</CycleCount>
+    <PageFaultCount>10</PageFaultCount>
+    <SysCallCount>10</SysCallCount>
+    <SamplingCounter Name="" ReloadValue="00000000000f4240" DisplayName="" />
+    <RelocateBinaries>false</RelocateBinaries>
+    <CollectOnHpcCluster>false</CollectOnHpcCluster>
+    <HPCSettings>
+      <NumberOfProcesses>0</NumberOfProcesses>
+      <TargetSelection>UnknownDisabled</TargetSelection>
+      <ProfileOnRank>0</ProfileOnRank>
+      <AdvancedProperties>
+        <Project>genCore</Project>
+        <CleanUp>true</CleanUp>
+        <MpiexecCommand>mpiexec.exe</MpiexecCommand>
+        <DeployCRT>true</DeployCRT>
+      </AdvancedProperties>
+    </HPCSettings>
+    <HardwareCounters EnableHWCounters="false" />
+    <EtwSettings />
+    <PdhSettings>
+      <PdhCountersEnabled>false</PdhCountersEnabled>
+      <PdhCountersRate>500</PdhCountersRate>
+      <PdhCounters>
+        <PdhCounter>\Memory\Pages/sec</PdhCounter>
+        <PdhCounter>\PhysicalDisk(_Total)\Avg. Disk Queue Length</PdhCounter>
+        <PdhCounter>\Processor(_Total)\% Processor Time</PdhCounter>
+      </PdhCounters>
+    </PdhSettings>
+  </Options>
+  <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+  <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+  <PreinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PreinstrumentEvent>
+  <PostinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PostinstrumentEvent>
+  <Binaries>
+    <ProjBinary>
+      <Path>H:\spGenerator\genCore\obj\Debug\genCore.dll</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <Sample>true</Sample>
+      <ExternalWebsite>false</ExternalWebsite>
+      <InteractionProfilingEnabled>false</InteractionProfilingEnabled>
+      <IsLocalJavascript>false</IsLocalJavascript>
+      <LaunchProject>true</LaunchProject>
+      <OverrideProjectSettings>false</OverrideProjectSettings>
+      <LaunchMethod>Executable</LaunchMethod>
+      <StartupDirectory>H:\spGenerator\genCore\bin\Debug\</StartupDirectory>
+      <Arguments />
+      <NetAppHost>IIS</NetAppHost>
+      <NetBrowser>InternetExplorer</NetBrowser>
+      <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+      <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{27363086-2E9C-4218-A789-32E962B1CE82}|genCore\genCore.csproj</ProjRef>
+      <ProjPath>H:\spGenerator\genCore\genCore.csproj</ProjPath>
+      <ProjName>genCore</ProjName>
+    </ProjBinary>
+    <ProjBinary>
+      <Path>H:\spGenerator\resources\obj\Debug\resources.dll</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <Sample>true</Sample>
+      <ExternalWebsite>false</ExternalWebsite>
+      <InteractionProfilingEnabled>false</InteractionProfilingEnabled>
+      <IsLocalJavascript>false</IsLocalJavascript>
+      <LaunchProject>true</LaunchProject>
+      <OverrideProjectSettings>false</OverrideProjectSettings>
+      <LaunchMethod>Executable</LaunchMethod>
+      <StartupDirectory>H:\spGenerator\resources\bin\Debug\</StartupDirectory>
+      <Arguments />
+      <NetAppHost>IIS</NetAppHost>
+      <NetBrowser>InternetExplorer</NetBrowser>
+      <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+      <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{2C539A7A-6D2B-4FD2-8D8A-812EBC14C6D5}|resources\resources.csproj</ProjRef>
+      <ProjPath>H:\spGenerator\resources\resources.csproj</ProjPath>
+      <ProjName>resources</ProjName>
+    </ProjBinary>
+    <ProjBinary>
+      <Path>H:\spGenerator\spGenerator\obj\Debug\DS.SSPCG.exe</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <Sample>true</Sample>
+      <ExternalWebsite>false</ExternalWebsite>
+      <InteractionProfilingEnabled>false</InteractionProfilingEnabled>
+      <IsLocalJavascript>false</IsLocalJavascript>
+      <LaunchProject>true</LaunchProject>
+      <OverrideProjectSettings>false</OverrideProjectSettings>
+      <LaunchMethod>Executable</LaunchMethod>
+      <ExecutablePath>H:\spGenerator\spGenerator\bin\Debug\DS.SSPCG.exe</ExecutablePath>
+      <StartupDirectory>H:\spGenerator\spGenerator\bin\Debug\</StartupDirectory>
+      <Arguments />
+      <NetAppHost>IIS</NetAppHost>
+      <NetBrowser>InternetExplorer</NetBrowser>
+      <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+      <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{B8BF090A-A834-42C8-8E7E-6CED866E08D0}|spGenerator\SPGenerator.csproj</ProjRef>
+      <ProjPath>H:\spGenerator\spGenerator\SPGenerator.csproj</ProjPath>
+      <ProjName>SPGenerator</ProjName>
+    </ProjBinary>
+  </Binaries>
+  <Launches>
+    <ProjBinary>
+      <Path>:PB:{B8BF090A-A834-42C8-8E7E-6CED866E08D0}|spGenerator\SPGenerator.csproj</Path>
+    </ProjBinary>
+  </Launches>
+  <RuntimeMarks>
+    <MarkName>Mark One</MarkName>
+    <MarkName>Mark Two</MarkName>
+    <MarkName>Mark Three</MarkName>
+    <MarkName>Mark Four</MarkName>
+    <MarkName>Mark Five</MarkName>
+    <MarkName>Mark Six</MarkName>
+    <MarkName>Mark Seven</MarkName>
+    <MarkName>Mark Eight</MarkName>
+    <MarkName>Mark Nine</MarkName>
+    <MarkName>Mark Ten</MarkName>
+  </RuntimeMarks>
+</VSPerformanceSession>
